@@ -1,0 +1,11 @@
+{% extends 'base.html.twig'%}
+
+{% block title %}CV de {{ app.session.get('first_name') }}{% endblock %}
+
+{% block body %}
+<h1>CV</h1>
+<p>Bonjour</p>
+<p>Je m'appele {{ first_name }} {{ last_name }}</p>
+<p>J'ai {{ age }} ans</p>
+<p>Et je suis de la section {{ section }}</p>
+{% endblock%}
